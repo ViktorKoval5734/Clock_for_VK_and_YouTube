@@ -19,9 +19,9 @@
 | **VK.com** | ➖ Ничего | Часы в левом нижнем углу |
 
 **✨ Особенности скрипта:**
-- 🔴 Часы на YouTube имеют визуальный стиль оригинального логотипа
-- ⚡ Не мешает работе других скриптов и расширений
-- 🔄 Обновляется через Tempermonkey, без необходимости повторной установки
+ 🔴 Часы на YouTube имеют визуальный стиль оригинального логотипа
+ ⚡ Не мешает работе других скриптов и расширений
+ 🔄 Обновляется через Tempermonkey, без необходимости повторной установки
 
 ## 🚀 Установка (всего за 2 клика)
 
@@ -33,7 +33,7 @@
   </a>
 </td>
 <td align="center" style="padding: 10px;">
-  <a href="https://raw.githubusercontent.com/ViktorKoval5734/Clock_for_VK_and_YouTube/main/%D0%A7%D0%B0%D1%81%D1%8B%20%D0%B2%20VK%20%D0%B8%20YouTube-3.0.user.js">
+  <a href="https://raw.githubusercontent.com/ViktorKoval5734/Clock_for_VK_and_YouTube/main/%D0%A7%D0%B0%D1%81%D1%8B%20%D0%B2%20VK%20%D0%B8%20YouTube.user.js">
     <img src="https://img.shields.io/badge/2.-Скрипт-green?style=for-the-badge&logo=github&logoColor=white" height="45">
   </a>
 </td>
@@ -41,10 +41,10 @@
 </table>
 
 ## ✅ Совместимость
-- Firefox + Tampermonkey
-- Chrome + Tampermonkey
-- Edge + Tampermonkey
-- Автообновления
+ Firefox + Tampermonkey
+ Chrome + Tampermonkey
+ Edge + Tampermonkey
+ Автообновления
 
 ---
 <p align="center">
