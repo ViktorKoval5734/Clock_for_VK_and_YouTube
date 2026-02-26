@@ -119,31 +119,35 @@
     }
 
 function createVkClock() {
-    if (document.getElementById('vk-left-clock')) return;
+    const oldClock = document.getElementById('vk-left-clock');
+    if (oldClock) oldClock.remove();
+
     const clock = document.createElement('div');
     clock.id = 'vk-left-clock';
     Object.assign(clock.style, {
         position: 'fixed',
-        zIndex: '2147483647',
+        zIndex: 2147483647,
         background: 'rgba(0,0,0,0.8)',
         color: '#fff',
-        padding: '8px 12px',        // ← старый размер
+        padding: '8px 12px',
         borderRadius: '6px',
         fontFamily: 'Arial, sans-serif',
-        fontSize: '16px',           // ← старый размер
+        fontSize: '16px',
         boxShadow: '0 2px 8px rgba(0,0,0,0.6)',
-        left: '12px',               // ← старое положение
+        left: '12px',
         bottom: '12px',
         pointerEvents: 'auto',
         userSelect: 'none'
     });
+
     document.documentElement.appendChild(clock);
-    
+
     function update() {
         const t = formatTime();
         clock.textContent = `${t.hours}:${t.minutes}:${t.seconds}`;
     }
     update();
     setInterval(update, 1000);
+
     console.log('✅ VK часы созданы');
 }
