@@ -118,35 +118,32 @@
         console.log('✅ V3 ЧАСЫ РАБОТАЮТ!');
     }
 
-    function createVkClock() {
-        if (document.getElementById('vk-left-clock')) return;
-        const clock = document.createElement('div');
-        clock.id = 'vk-left-clock';
-        Object.assign(clock.style, {
-            position: 'fixed',
-            zIndex: '2147483647',
-            background: 'rgba(0,0,0,0.9)',
-            color: '#fff',
-            padding: '12px 16px',
-            borderRadius: '10px',
-            fontFamily: 'Arial, sans-serif',
-            fontSize: '20px',
-            fontWeight: 'bold',
-            boxShadow: '0 6px 20px rgba(0,0,0,0.9)',
-            left: '24px',
-            bottom: '24px',
-            pointerEvents: 'auto',
-            userSelect: 'none',
-            backdropFilter: 'blur(10px)'
-        });
-        document.documentElement.appendChild(clock);
-
-        function update() {
-            const t = formatTime();
-            clock.textContent = `${t.hours}:${t.minutes}:${t.seconds}`;
-        }
-        update();
-        setInterval(update, 1000);
-        console.log('✅ VK часы созданы');
+function createVkClock() {
+    if (document.getElementById('vk-left-clock')) return;
+    const clock = document.createElement('div');
+    clock.id = 'vk-left-clock';
+    Object.assign(clock.style, {
+        position: 'fixed',
+        zIndex: '2147483647',
+        background: 'rgba(0,0,0,0.8)',
+        color: '#fff',
+        padding: '8px 12px',        // ← старый размер
+        borderRadius: '6px',
+        fontFamily: 'Arial, sans-serif',
+        fontSize: '16px',           // ← старый размер
+        boxShadow: '0 2px 8px rgba(0,0,0,0.6)',
+        left: '12px',               // ← старое положение
+        bottom: '12px',
+        pointerEvents: 'auto',
+        userSelect: 'none'
+    });
+    document.documentElement.appendChild(clock);
+    
+    function update() {
+        const t = formatTime();
+        clock.textContent = `${t.hours}:${t.minutes}:${t.seconds}`;
     }
-})();
+    update();
+    setInterval(update, 1000);
+    console.log('✅ VK часы созданы');
+}
